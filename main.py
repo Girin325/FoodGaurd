@@ -2,8 +2,11 @@ import streamlit as st
 from ocr_utils import extract_text_with_clova
 from gpt_utils import analyze_with_gpt, get_diet_recommendation
 from data_utils import extract_disease_data_from_pdf, load_excel_data
-from config import CLOVA_API_URL, CLOVA_SECRET_KEY, PDF_PATH, EXCEL_FILE_PATH
+from config import CLOVA_API_URL, CLOVA_SECRET_KEY, PDF_PATH, EXCEL_FILE_PATH, OPENAI_API_KEY
 from PIL import Image
+import openai
+
+openai.api_key = OPENAI_API_KEY
 
 # 데이터 로드
 pdf_data = extract_disease_data_from_pdf(PDF_PATH)

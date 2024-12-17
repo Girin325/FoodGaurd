@@ -1,4 +1,7 @@
 import openai
+from config import OPENAI_API_KEY
+
+openai.api_key = OPENAI_API_KEY
 
 def analyze_with_gpt(extracted_text):
     """GPT-4 API를 사용하여 원재료명과 영양정보 추출"""
