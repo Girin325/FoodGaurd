@@ -1,4 +1,4 @@
-# FoodGaurd
+# FoodGuard
 
 Smart Chatbot Planner for Health and Allergies
 
